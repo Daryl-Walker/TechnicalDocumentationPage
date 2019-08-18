@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+    <HEAD>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<TITLE>Technical Documentation Page</TITLE>
+		<style>
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            header {
+                font-size: 30px;
+            }
+            #main-doc {
+                position: absolute;
+                margin-left: 350px;
+                padding: 25px;
+                padding-bottom: 80px;
+            }
+            .main-section {
+
+            }
+            #navbar {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 340px;
+                height: 100%;
+                border-right: 2px solid;
+                border-right-color: dimgrey;
+            }
+            .nav-link {
+
+            }
+            #Introduction {
+
+            }
+            #Basic_Template {
+
+            }
+            #Adding_Elements {
+
+            }
+            #CSS {
+
+            }
+            #Viewing_Your_Work {
+
+            }
+            #navbar li {
+                border-top: 2px solid;
+                list-style: none;
+                width: 100%;
+                border-top-color: dimgrey;
+            }
+            code {
+                display: block;
+                text-align: left;
+                white-space: pre;
+                word-break: normal;
+                word-wrap: normal;
+                position:relative;
+                background-color: lightgray;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 5px;
+            }
+            @media (max-width: 100px) {
+                body {
+                    background-color: ghostwhite;
+                    text-align: center;
+                }
+            }
+        </style>
+	</HEAD>
+    <body>
+        <h1>Building A Basic HTML Page For Noobs</h1>
+        <nav id="navbar">
+            <header style="text-align: center;">
+                HTML Basics
+            </header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">
+                        Introduction
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Basic_Template">
+                        Basic Template
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Adding_Elements">
+                        Adding Elements
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#CSS">
+                        CSS
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Viewing_Your_Work">
+                        Viewing Your Work
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>
+                    Introduction
+                </header>
+                <p>
+                    With this page, I intend to give you a basic knowledge of HTML coding. I've found that the more you code, the better you get, and the more you learn. You will first need either a code-writing app or a notepad app. A lot of code-writing apps have basic templates to start from, but here, I will show you how to build one. After this lesson, you'll be able to:
+                </p>
+                <ol>
+                    <li>
+                        Build your HTML template from scratch
+                    </li>
+                    <li>
+                        Implement elements
+                    </li>
+                    <li>
+                        Create a style sheet
+                    </li>
+                    <li>
+                        Link bootstrap and Jquery
+                    </li>
+                    <li>
+                        Open the page in your browser
+                    </li>
+                </ol>
+                <p>
+                    Nothing is easy about it, but it gets easier as you go. Starting out is the most intimidating, but once you understand the basics, you'll be doing some serious coding in no time! Good luck!
+                </p>
+            </section>
+            <section class="main-section" id="Basic_Template">
+                <header>
+                    Basic Template
+                </header>
+                <p>
+                    As mentioned before, a lot of code-writing apps have basic templates to start out with. However, if you build one from scratch in a notepad app, you can control what goes on your page with a little more scrutiny. Furthermore, this method helps you to understand why certain metadata, elements, and links were implemented.
+                </p>
+                <p>
+                    For this method, you'll need to have a notepad app. Notepad++ is highly recommended. Once you've gotten the app and have opened it, you'll need to start with declaring that this document that you're creating is a HTML document, and that it is being written in the English language. It should look like this:
+                </p>
+                <code>&#8249DOCTYPE HTML&#8250<br>&#8249HTML lang="en"&#8250&#8249&#8260HTML&#8250</code>
+                <em>Notice that the HTML element has a closing tag! Everything from this point forward will be nested within the HTML element.</em>
+                <p>
+                    The next parts of the framework is the HEAD and the body. The HEAD is where you will nest all of your metadata and inline styles inside of, and is the second element that requires a closing tag. It is also a good spot to place your <a href="https://getbootstrap.com" target="_blank">bootstrap</a> links and the page's TITLE. Bootstrap is like a pre-made, universal style sheet (we'll get into style sheets later), and it allows you to input classes, styles, IDs, etc. in your code with pre-determined parameters without having to create them yourself (vocabulary is the key). Visit the link for info and downloads. It'll show you how and where to implement the links for it and jquery.
+                </p>
+                <p>
+                    The body is pretty much self explanitory. It is where all of your actual code will go. Everything that will be displayed in the viewport is within the body. The body is also an element that requires a closing tag. After adding your HEAD and body, your notepad project should look like this:
+                </p>
+                <code>&#8249DOCTYPE HTML&#8250<br>&#8249HTML lang="en"&#8250<br>&#8249HEAD&#8250&#8249&#8260HEAD&#8250<br>&#8249body&#8250&#8249&#8260body&#8250<br>&#8249&#8260HTML&#8250</code>
+                <p>
+                    Once your notepad project resembles this, you will want to save it as a HTML document within your project's folder (you'll need to create one if you haven't already), then open it with which ever code-writing app you desire. This is the most basic construct of a HTML template that you can build yourself within five minutes, and it eliminates any elements, links, metadata, or scripts that you won't need with the default templates that come with most apps. If you need anything else, you can simply add it. This method inadvertently teaches you what everything means by making you add what you need, instead of it already being there and you not knowing what its function is.
+                </p>
+            </section>
+            <section class="main-section" id="Adding_Elements">
+                <header>
+                    Adding Elements
+                </header>
+                <p>
+                    Adding an element is easy, once you know how to word what you're trying to do ... vocabulary. Most elements require an opening and closing tag, not all, but most. Some, such as <code style="width: 50px" ;>&#8249img&#8250</code> and <code style="width: 40px" ;>&#8249br&#8250</code> do not require closing tags and are considered "self-closing" for this reason. Other elements, like the section or header elements, require a closing tag. For example, if you wanted to add a header for your page, your code should resemble this:
+                </p>
+                <code>&#8249DOCTYPE HTML&#8250<br>&#8249HTML lang="en"&#8250<br>&#8249HEAD&#8250&#8249&#8260HEAD&#8250<br>&#8249body&#8250<br>  &#8249header&#8250<br>      <em>-your header here-</em><br>  &#8249&#8260header&#8250<br>&#8249&#8260body&#8250<br>&#8249&#8260HTML&#8250</code>
+                <p>
+                    Adding images, audio, and video is a little more involved. They require either a <code style="width: 50px" ;>&#8249src&#8250</code> or a <code style="width: 55px" ;>&#8249href&#8250</code>type of tag depending on how you're using the element. It is best practice to keep all of your files together and well organized within your project folder with which to access. If not, the files that aren't saved properly will not be viewable to another computer's browser because it won't know where to access the particular file. However, If all of your files are saved properly, and you're just trying to add an image, your code should look like so:
+                </p>
+                <code>&#8249DOCTYPE HTML&#8250<br>&#8249HTML lang="en"&#8250<br>&#8249HEAD&#8250&#8249&#8260HEAD&#8250<br>&#8249body&#8250<br>  &#8249header&#8250<br>      <em>-your header here-</em><br>  &#8249&#8260header&#8250<br>  &#8249img src"<em>-path to your image here-</em>"&#8250<br>&#8249&#8260body&#8250<br>&#8249&#8260HTML&#8250</code>
+                <p>
+                    Your image should appear under your header. They both will be subject to default settings (such as image size and font styles) and will need to be "styled-out" either inline or within your style sheet.
+                </p>
+            </section>
+            <section class="main-section" id="CSS">
+                <header>
+                    CSS
+                </header>
+                <p>
+                    CSS is an acronym for Cascading Style Sheet, and there are different ways to style the elements within your project. You can add them inline, you can add them in your HEAD, or you can create a separate style sheet for your project.
+                </p>
+                <p>
+                    Modifying an element inline is easy, yet nonsensical if you're going to have multiple elements with the same modifications. However, some elements might require a finishing touch that others might not. For example, if you needed to change the height of your image, your code might turn out like this:
+                </p>
+                <code>&#8249DOCTYPE HTML&#8250<br>&#8249HTML lang="en"&#8250<br>&#8249HEAD&#8250&#8249&#8260HEAD&#8250<br>&#8249body&#8250<br>  &#8249header&#8250<br>      <em>-your header here-</em><br>  &#8249&#8260header&#8250<br>  &#8249img src"<em>-path to your image here-</em>" height:"<em>-your customized height here-</em>"&#8250<br>&#8249&#8260body&#8250<br>&#8249&#8260HTML&#8250</code>
+                <p>
+                    Modifying elements within the HEAD means you will have to create a style tag within it. Once you've that, you'll nest your styles, classes, ids, etc., within that tag. It is a lot more efficient with styling many things at one time. So, to achieve the same thing to your image, yet for multiple images if need be, it would look like this:
+                </p>
+                <code>&#8249HEAD&#8250<br>&#8249style&#8250<br>   .img{<br>     height: <em>-your customized height here-;</em><br>   }<br>&#8249&#8260style&#8250<br>&#8249&#8260HEAD&#8250</code>
+                <em>Keep in mind, these styles are cascading, meaning if there is anything that falls after these styles that will modify the element, then the computer will accept the latter!</em>
+                <p>
+                    Some programmers find themselves using the same styles over, and over, and over again. CSS circumnavigates the repetitiveness by allowing you to create a separate style sheet and link it to your project. This way, you can use the same style sheet with multiple projects without having to re-write all of the code associated with it. Doing this is the same as how you createdd the HTML document to begin with, through the notepad. Simply write your first modification, then save the notepad file as a CSS file within your project's folder. From there, you can open the file within your coding app and modify it there if needed. There are multiple ways to achieve everything that I have mentioned, yet this is a basic, universal way to create a HTML document.
+                </p>
+            </section>
+            <section class="main-section" id="Viewing_Your_Work">
+                <header>
+                    Viewing Your Work
+                </header>
+                <p>
+                    Viewing your work is as simple as opening the HTML file in your web browser. Simply right click on the file and click on "Open With" if there are no browser options available.
+                </p>
+            </section>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</HTML>
